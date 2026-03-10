@@ -206,7 +206,7 @@ export default function Dashboard() {
           <MetricCard
             title="Occupations Tracked"
             value="29"
-            subtitle="Cross-mapped O*NET + NOC + ESCO"
+            subtitle="O*NET + NOC 2026 + ESCO cross-mapped"
             icon={Users}
             color="violet"
           />
@@ -218,16 +218,16 @@ export default function Dashboard() {
             color="amber"
           />
           <MetricCard
-            title="Automation Score Avg"
-            value={avgScoreLabel}
-            subtitle="Across 39 tasks × 4 jurisdictions"
-            icon={Zap}
+            title="Industries Benchmarked"
+            value="20"
+            subtitle="35 skills tracked · 22 reskilling paths"
+            icon={TrendingUp}
             color="blue"
           />
           <MetricCard
-            title="Jurisdictions Covered"
-            value="14"
-            subtitle="USA, Canada, EU, Quebec + more"
+            title="Regulatory Jurisdictions"
+            value="15"
+            subtitle="EU AI Act · Quebec Law 25 · US · Canada + more"
             icon={Globe}
             color="emerald"
           />

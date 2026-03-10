@@ -1306,10 +1306,19 @@ async def ai_chat(request: AIChatRequest):
             system_prompt = f"""You are an AI automation expert for Automatejobs.ia, a platform that helps people build compliant AI agents and automations.
 
 Platform data:
-- 29 occupations cross-mapped (O*NET + NOC + ESCO)
-- 39 tasks with automation scores (0-100, deterministic)
-- 14 regulatory jurisdictions (EU AI Act, Quebec Law 25, US Federal, Canada)
-- Industries: Finance, Healthcare, Manufacturing, HR, Legal, Customer Service, etc.
+- 29 occupations cross-mapped (O*NET + NOC 2026 + ESCO)
+- 39 atomic tasks with deterministic automation scores (0-100, no hallucination)
+- 156 automation scores across 4 jurisdictions (USA, Canada, EU, Quebec)
+- 20 industries benchmarked for automation maturity (Financial Services, Healthcare, Manufacturing, Retail, Technology, Legal, Insurance, Transportation, Real Estate, Hospitality, Agriculture, Telecom, Energy, Pharma, Media, Construction, Government, Professional Services, Nonprofit, Automotive)
+- 35 skills tracked with decay half-life predictions and wage impact analysis
+- 22 reskilling pathways with ROI and salary increase data
+- 15 regulatory jurisdictions forecasted through 2030 (EU AI Act, Quebec Law 25, CNESST, CFPB, California, New York, Colorado, Singapore, Australia, Japan, Brazil, India, UK, China, Canada Federal)
+- 15 AI tools in vendor database (OpenAI, Anthropic, Google, UiPath, Automation Anywhere, Microsoft Power Automate, AWS Textract, Google Document AI, Amazon Lex, Intercom, Landing AI, Cognex, Waymo, TuSimple, DataRobot)
+- 15 labor arbitrage opportunities with urgency scoring and wage growth trends
+- 8 first-mover automation windows with competitive advantage data
+- 5 company-size ROI benchmarks (Startup → Mega Corp)
+- 10 TCO analyses with hidden cost multipliers
+- 85+ API endpoints for all intelligence data
 
 {platform_context}
 
@@ -1437,13 +1446,14 @@ All 5 are:
 **Next step:** Click "Quick Wins" on the Build Studio page to start with any of these today."""
 
     else:
-        response_text = """Great question! Based on our platform's data across 29 occupations and 39 tasks:
+        response_text = """Great question! Based on our platform's intelligence across 29 occupations, 20 industries, 35 skills, and 15 regulatory jurisdictions:
 
 **Overall automation landscape:**
-• Average automation score: 74/100 across all tracked tasks
+• Average automation score: 74/100 across 156 scored tasks (39 tasks × 4 jurisdictions)
 • 8.1 million US jobs facing automation impact
 • Most automatable: Data Entry (91/100), Invoice Processing (84/100), Report Generation (78/100)
 • Typical ROI: 150-300% Year 1 for well-chosen automations
+• 20 industries benchmarked — Financial Services (72/100 maturity) leads adoption
 
 **Getting started:**
 1. Pick an industry (Finance, Healthcare, HR, Manufacturing, Customer Service are most mature)
@@ -1452,10 +1462,10 @@ All 5 are:
 4. Calculate ROI before investing (use our ROI Calculator)
 
 **Platform features to explore:**
-• 📊 Intelligence Dashboard — browse all occupation data
+• 📊 Intelligence Dashboard — 20 industries, 35 skills, 22 reskilling pathways
 • 🤖 AI Wizard — 7-step guided builder
-• 💰 ROI Calculator — real cost + return estimates
-• 🛡️ Regulatory Compliance — jurisdiction-by-jurisdiction rules
+• 💰 ROI Calculator — real cost + return estimates for 5 company sizes
+• 🛡️ Regulatory Compliance — 15 jurisdictions tracked through 2030
 
 What specific industry or task would you like to explore?"""
 
